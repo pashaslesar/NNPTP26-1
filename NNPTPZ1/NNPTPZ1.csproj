@@ -44,11 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InputSettings\FractalSettings.cs" />
+    <Compile Include="Mathematics\ComplexNumber.cs" />
+    <Compile Include="Mathematics\NewtonResult.cs" />
+    <Compile Include="Mathematics\NewtonSolver.cs" />
+    <Compile Include="Mathematics\Polynomial.cs" />
+    <Compile Include="Mathematics\RootCollection.cs" />
+    <Compile Include="PixelGraphics\ColorManager.cs" />
+    <Compile Include="PixelGraphics\FractalRenderer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
