@@ -12,6 +12,10 @@ namespace NNPTPZ1
     /// </summary>
     class Program
     {
+        /// <summary>
+        /// Generates a Newton fractal image and saves it to a file
+        /// </summary>
+        /// <param name="args">Width, height, XMin, XMax, YMin, YMax and output file path</param>
         static void Main(string[] args)
         {
             FractalSettings settings = FractalSettings.Parse(args);

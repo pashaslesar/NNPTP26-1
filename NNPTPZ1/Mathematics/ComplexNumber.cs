@@ -2,6 +2,10 @@
 
 namespace NNPTPZ1.Mathematics
 {
+    /// <summary>
+    /// Complex number
+    /// Real + Imaginary * i
+    /// </summary>
     public class ComplexNumber
     {
         public double Real { get; set; }

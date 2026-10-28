@@ -1,5 +1,8 @@
 ﻿namespace NNPTPZ1.InputSettings
 {
+    /// <summary>
+    /// Input parameters of the fractal generator parsed from command-line arguments.
+    /// </summary>
     public class FractalSettings
     {
         public int Width { get; set; }
@@ -10,6 +13,11 @@
         public double YMax { get; set; }
         public string OutputFile { get; set; }
 
+        /// <summary>
+        /// Creates settings from command-line arguments
+        /// </summary>
+        /// <param name="args">Width, height, XMin, XMax, YMin, YMax and output file path</param>
+        /// <returns>Parsed settings</returns>
         public static FractalSettings Parse(string[] args)
         {
             return new FractalSettings

@@ -1,5 +1,8 @@
 ﻿namespace NNPTPZ1.Mathematics
 {
+    /// <summary>
+    /// Result of Newton's method for one starting point
+    /// </summary>
     public class NewtonResult
     {
         public ComplexNumber Root { get; set; }

@@ -2,18 +2,26 @@
 
 namespace NNPTPZ1.Mathematics
 {
+    /// <summary>
+    /// Polynomial
+    /// </summary>
     public class Polynomial
     {
         /// <summary>
-        /// Coefficients
+        /// Coefficients of the polynomial
         /// </summary>
         public List<ComplexNumber> Coefficients { get; set; }
 
         /// <summary>
         /// Constructor
+        /// Creates a polynomial with no coefficients
         /// </summary>
         public Polynomial() => Coefficients = new List<ComplexNumber>();
 
+        /// <summary>
+        /// Appends a coefficient for the next higher power of x
+        /// </summary>
+        /// <param name="coefficient">Coefficient to append.</param>
         public void AddCoefficient(ComplexNumber coefficient) =>
             Coefficients.Add(coefficient);
 
@@ -36,7 +44,7 @@ namespace NNPTPZ1.Mathematics
         /// Evaluates polynomial at given point
         /// </summary>
         /// <param name="pointOfEvaluation">point of evaluation</param>
-        /// <returns>y</returns>
+        /// <returns>Value of the polynomial at the given point</returns>
         public ComplexNumber Eval(double pointOfEvaluation)
         {
             return Eval(new ComplexNumber() { Real = pointOfEvaluation, Imaginary = 0 });
@@ -46,7 +54,7 @@ namespace NNPTPZ1.Mathematics
         /// Evaluates polynomial at given point
         /// </summary>
         /// <param name="pointOfEvaluation">point of evaluation</param>
-        /// <returns>y</returns>
+        /// <returns>Value of the polynomial at the given point</returns>
         public ComplexNumber Eval(ComplexNumber pointOfEvaluation)
         {
             ComplexNumber valueOfPolynomial = ComplexNumber.Zero;
@@ -73,9 +81,9 @@ namespace NNPTPZ1.Mathematics
         }
 
         /// <summary>
-        /// ToString
+        /// Returns a text representation of the polynomial
         /// </summary>
-        /// <returns>String repr of polynomial</returns>
+        /// <returns>Text representation of polynomial</returns>
         public override string ToString()
         {
             string equation = "";

@@ -4,6 +4,9 @@ using NNPTPZ1.Mathematics;
 
 namespace NNPTPZ1.PixelGraphics
 {
+    /// <summary>
+    /// Renders a Newton fractal into a bitmap
+    /// </summary>
     public class FractalRenderer
     {
         private readonly FractalSettings settings;

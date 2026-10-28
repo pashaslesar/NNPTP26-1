@@ -2,6 +2,9 @@
 
 namespace NNPTPZ1.Mathematics
 {
+    /// <summary>
+    /// Finds roots of a polynomial using Newton's method
+    /// </summary>
     public class NewtonSolver
     {
         private readonly Polynomial polynomial;

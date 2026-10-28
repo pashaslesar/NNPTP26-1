@@ -3,6 +3,9 @@ using System.Drawing;
 
 namespace NNPTPZ1.PixelGraphics
 {
+    /// <summary>
+    /// Selects pixel colors based on the found root and the number of iterations
+    /// </summary>
     public class ColorManager
     {
         private readonly Color[] colors =
